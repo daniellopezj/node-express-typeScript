@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
-    "dev": "cross-env NODE_ENV=development nodemon app.js"
+    "start": "NODE_ENV=production node app.ts",
+    "dev": "cross-env NODE_ENV=development nodemon app.ts"
   },
   "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
     "cookie-parser": "~1.4.4",
     "cross-env": "^7.0.3",
     "debug": "~2.6.9",
@@ -17,7 +19,14 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "^1.9.1",
-    "nodemon": "^2.0.22",
     "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "@types/dotenv-safe": "^8.1.2",
+    "@types/morgan": "^1.9.4",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }
